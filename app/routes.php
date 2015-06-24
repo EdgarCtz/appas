@@ -109,6 +109,10 @@ Route::group(array('before'=>'validar'),function(){
 
 	Route::get('pruebasCumplimiento','PruebaCumplimientoController@listarPCumplimiento');
 	Route::get('nuevoCuestionarioCumplimiento','PruebaCumplimientoController@nuevaPCumplimiento');
+
+
+	Route::get('pruebasSustantivas','PruebaSustantivaController@listarPSustantiva');
+	Route::get('nuevoCuestionarioSustantivas','PruebaSustantivaController@nuevoPSustantiva');
 });
 
 	Route::post('registrarPlanAuditoria','PlanAuditoriaController@save');

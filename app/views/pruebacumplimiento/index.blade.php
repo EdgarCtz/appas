@@ -23,7 +23,7 @@
 	</table>
 	
 	<br>
-	<h1 class="page-header">Preguntas de Cumplimiento</h1>
+	<h1 class="page-header">Preguntas de Pruebas Sustentivas</h1>
 
 
 		 <a href="{{url('/nuevoPerfilRol')}}" class="btn btn-primary">Nuevo</a>

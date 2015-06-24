@@ -45,8 +45,8 @@
             <a href="{{url('/pruebasCumplimiento')}}">
                 <span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span>Pruebas de Cumplimiento</a></li>
 
-        <li class="">
-            <a href="{{url('/#')}}">
+        <li class="{{ Request::is('pruebasSustantivas*') ? 'active' : ''}}">
+            <a href="{{url('/pruebasSustantivas')}}">
                 <span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span>Pruebas Sustativas</a></li>
     </ul>
 </div>
