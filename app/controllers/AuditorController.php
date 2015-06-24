@@ -2,6 +2,7 @@
 	/**
 	* 
 	*/
+
 	class AuditorController extends BaseController
 	{
 		protected $layout='layouts.plan';

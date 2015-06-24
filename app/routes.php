@@ -76,6 +76,7 @@ Route::group(array('before'=>'validar'),function(){
 	Route::post('internacionalUpdate/{id}','MarcosController@MIUpdate');
 	Route::post('nacionalUpdate/{id}','MarcosController@MNUpdate');
 	Route::get('marcosListar','MarcosController@Listar');
+	Route::post('marcodetipo/{id}','MarcosController@getMarco');
 	
 	
 	Route::get('direccionamientoEdit','DireccionamientoController@Edit');
@@ -119,7 +120,9 @@ Route::group(array('before'=>'validar'),function(){
 	Route::post('registrarMInternacional','MarcosController@MIsave');
 	Route::post('registrarMNacional','MarcosController@MNsave');
 	Route::post('registrarNInstitucional','MarcosController@NIsave');
+	
 	Route::post('registrarEmpresa','EmpresasController@save');
+
 	Route::post('registrarObjetivo','ObjetivosController@save');
 	Route::post('registrarAclaraciones','AclaracionesController@save');
 
